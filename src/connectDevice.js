@@ -1,5 +1,6 @@
 function findDeviceByName(nodeHid) {
-    const buzzDevice = nodeHid.devices().find(d => d.product.match(/Buzz/));
+    const buzzDevice = nodeHid.devices().find(d => d.product.match(/Buzz|Wbuzz/));
+    if (!buzzDevice) throw new Error("Unable to find any Buzz USB Device!");
     return new nodeHid.HID(buzzDevice.vendorId, buzzDevice.productId);
 }
 module.exports = function(nodeHid) {
