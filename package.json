@@ -12,11 +12,11 @@
   },
   "author": "Andreas",
   "dependencies": {
-    "node-hid": "0.7.6"
+    "node-hid": "2.1.1"
   },
   "devDependencies": {
-    "ava": "1.0.1",
-    "eslint": "5.12.0",
+    "ava": "^4.0.1",
+    "eslint": "^8.6.0",
     "prettier": "1.15.3",
     "sinon": "7.2.2"
   },
